@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Wali</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Dashboard Wali Kelas</h2>
+
+  <div class="card">
+    <h3>Input Siswa (Bulk)</h3>
+    <textarea id="bulkSiswa" placeholder="1 nama per baris"></textarea>
+    <button onclick="saveSiswa()">Simpan</button>
+  </div>
+
+  <div class="card">
+    <h3>Manajemen Poin</h3>
+    <input type="text" id="nama">
+    <input type="number" id="poin">
+    <input type="text" id="alasan">
+    <button onclick="tambahPoin()">Submit</button>
+  </div>
+
+  <div class="card">
+    <h3>Kotak Curhat Anonim</h3>
+    <div id="curhatList"></div>
+  </div>
+
+  <div class="card">
+    <button onclick="downloadCSV()">Download Rekap</button>
+  </div>
+
+</div>
+
+<script src="../js/wali.js"></script>
+</body>
+</html>
