@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Dashboard Pengurus</h2>
+
+  <div class="card">
+    <h3>Pengumuman</h3>
+    <textarea id="pengumuman"></textarea>
+    <button onclick="postPengumuman()">Post</button>
+  </div>
+
+  <div class="card">
+    <h3>Input Tugas</h3>
+    <input type="text" id="tugas">
+    <input type="datetime-local" id="deadline">
+    <button onclick="addTugas()">Tambah</button>
+  </div>
+
+  <div class="card">
+    <h3>Kas Kelas</h3>
+    <input type="number" id="uang">
+    <button onclick="tambahKas()">Tambah</button>
+  </div>
+</div>
+
+<script src="../js/pengurus.js"></script>
